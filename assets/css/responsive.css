@@ -1,0 +1,91 @@
+@media (max-width: 992px) {
+
+    .navbar-collapse {
+        background: #fff;
+        padding-left: 1rem;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #000;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: rgb(22, 212, 95);
+    }
+
+    .navbar-light .navbar-nav .active .nav-link {
+        color: rgb(22, 212, 95);
+    }
+
+    .main-hero-content h1 {
+        font-size: 22px;
+        letter-spacing: .11rem;
+        line-height: 25px;
+    }
+
+    .main-hero-content p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* Hero section */
+    .image-box {
+        display: none;
+    }
+
+    /* Benefit section */
+    #benefit .device img {
+        margin-bottom: 2rem;
+    }
+
+    /* Informasi section */
+    #informasi .address {
+        margin-top: 2rem;
+    }
+
+    /* footer section */
+    .footer-logo {
+        margin-top: -1rem;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    /* Hero section */
+    .main-hero-content h1 {
+        text-align: center;
+    }
+
+    .main-hero-content p {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    /* Benefit section */
+    #benefit {
+        margin-top: 0;
+    }
+
+    /* Produk section */
+    #produk .produk-table {
+        width: calc(80% / 1);
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #produk .produk-table:nth-child(1) {
+        margin-top: -2rem;
+    }
+
+}
