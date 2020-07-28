@@ -236,7 +236,8 @@
         </div>
 
     </section> 
-   <!-- Produk section -->
+    
+   <!-- Testimoni section -->
     <section id="testimoni">
 
         <div class="container">
@@ -368,7 +369,10 @@
 
     </footer>
 
-    <a href="#produk" id="beliFloating" class="btn btn-success">Beli Sekarang</a>
+    <a href="#" id="beliFloating" class="btn btn-success">
+        <span class="float-left">1 item | Rp 200.000</span>
+        <span class="float-right"><i class="fa fa-shopping-cart"></i></span>
+    </a>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
