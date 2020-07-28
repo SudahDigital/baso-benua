@@ -372,11 +372,10 @@ h2.section-title-heading {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    left: 50%;
     z-index: 99;
     cursor: pointer;
     border: 2px solid var(--main-accent-color);
-    border-radius: 2rem;
     color: #ffffff;
     background-color: var(--main-accent-color);
     font-weight: 600;
@@ -384,6 +383,9 @@ h2.section-title-heading {
     padding-left: 2rem;
     padding-right: 2rem;
     outline: 0 !important;
+    transform: translate(-50%, 0);
+    width: 82%;
+    text-align: center;
 }
 
 #beliFloating:hover {
