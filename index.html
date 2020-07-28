@@ -368,11 +368,27 @@
 
     </footer>
 
+    <a href="#produk" id="beliFloating" class="btn btn-success">Beli Sekarang</a>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>   
     <script src="animate-on-scroll.min.js"></script>
     <script src="assets/js/custom.js" ></script>   
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("beliFloating");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+    </script>
 </body>
 </html>
