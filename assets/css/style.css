@@ -272,19 +272,12 @@ h2.section-title-heading {
     padding-bottom: 20px;
 }
 
-#produk .produk-table .table-footer a {
+#produk .produk-table .table-footer input.button-tambah {
     background: linear-gradient(to right, rgb(22, 212, 95), rgb(105,240,174));
     padding: .8rem 2rem;
     border-radius: 2rem;
     color: #ffffff;
     font-weight: 600;
-}
-
-#produk .produk-table .table-footer a:hover {
-    text-decoration: none;
-    background: #ffffff;
-    color: rgb(22, 212, 95);
-    border: 2px solid rgb(22, 212, 95);
 }
 
 #produk .table-header {
@@ -294,6 +287,10 @@ h2.section-title-heading {
 
 #produk .produk-table .table-header {
     padding-top: 10px;
+}
+
+#produk .button_plus, #produk .button_minus {
+    background: linear-gradient(to right, rgb(22, 212, 95), rgb(105,240,174)) !important;
 }
 
 /* ============ TESTIMONI =============== */

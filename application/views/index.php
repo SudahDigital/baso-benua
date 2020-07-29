@@ -162,9 +162,14 @@
                                     <h4 class="mb-0">Baso Urat</h4>
                                     <p class="mb-0">10 pcs</p>
                                     <p>Rp 35.000</p>
+                                    <div class="px-1 py-2 mx-auto">
+                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})">+</button>
+                                        <p id="show_{{$value->id}}" class="mr-1 ml-1 d-inline" style="color: #000 !important;">1</p>
+                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})">-</button>
+                                    </div>
                                 </div>
                                 <div class="table-footer text-center">
-                                    <a target="_bank" href="https://wa.me/6282125555031?text=Saya tertarik dengan baso uratnya">Beli</a>
+                                    <input type="submit" class="btn btn-success button-tambah" value="Tambah">
                                 </div>
                             </div>
                         </div>
@@ -182,9 +187,14 @@
                                     <h4 class="mb-0">Baso Bulat</h4>
                                     <p class="mb-0">10 pcs</p>
                                     <p>Rp 35.000</p>
+                                    <div class="px-1 py-2 mx-auto">
+                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})">+</button>
+                                        <p id="show_{{$value->id}}" class="mr-1 ml-1 d-inline" style="color: #000 !important;">1</p>
+                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})">-</button>
+                                    </div>
                                 </div>
                                 <div class="table-footer text-center">
-                                    <a target="_bank" href="https://wa.me/6282125555031?text=Saya tertarik dengan baso uratnya">Beli</a>
+                                    <input type="submit" class="btn btn-success button-tambah" value="Tambah">
                                 </div>
                             </div>
                         </div>
@@ -203,9 +213,14 @@
                                     <h4 class="mb-0">Baso Urat</h4>
                                     <p class="mb-0">10 pcs</p>
                                     <p>Rp 35.000</p>
+                                    <div class="px-1 py-2 mx-auto">
+                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})">+</button>
+                                        <p id="show_{{$value->id}}" class="mr-1 ml-1 d-inline" style="color: #000 !important;">1</p>
+                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})">-</button>
+                                    </div>
                                 </div>
                                 <div class="table-footer text-center">
-                                    <a target="_bank" href="https://wa.me/6282125555031?text=Saya tertarik dengan baso uratnya">Beli</a>
+                                    <input type="submit" class="btn btn-success button-tambah" value="Tambah">
                                 </div>
                             </div>
                         </div>
@@ -223,9 +238,14 @@
                                     <h4 class="mb-0">Baso Bulat</h4>
                                     <p class="mb-0">10 pcs</p>
                                     <p>Rp 35.000</p>
+                                    <div class="px-1 py-2 mx-auto">
+                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})">+</button>
+                                        <p id="show_{{$value->id}}" class="mr-1 ml-1 d-inline" style="color: #000 !important;">1</p>
+                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})">-</button>
+                                    </div>
                                 </div>
                                 <div class="table-footer text-center">
-                                    <a target="_bank" href="https://wa.me/6282125555031?text=Saya tertarik dengan baso uratnya">Beli</a>
+                                    <input type="submit" class="btn btn-success button-tambah" value="Tambah">
                                 </div>
                             </div>
                         </div>
@@ -236,7 +256,6 @@
         </div>
 
     </section> 
-    
    <!-- Testimoni section -->
     <section id="testimoni">
 
@@ -284,7 +303,7 @@
                     <div class="produk-table w-100">
                         <div class="row">
                             <div class="col-md-5">
-                                <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/11711928/2020/7/14/f6325ba7-8872-43f3-becb-14efd2a872281594724308447-Mast--Harbour-Women-Yellow-Solid-V-Neck-T-shirt-818159472430-1.jpg" class="img-fluid w-100 h-100" alt="">
+                                <img src="https://www.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg" class="img-fluid w-100 h-100" alt="">
                             </div>
                             <div class="col-md-7 my-auto pl-0">
                                 <div class="table-header text-center">
@@ -300,7 +319,7 @@
                     <div class="produk-table w-100">
                         <div class="row">
                             <div class="col-md-5">
-                                <img src="https://www.pngmart.com/files/3/Man-PNG-Pic.png" class="img-fluid w-100 h-100" alt="">
+                                <img src="https://www.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg" class="img-fluid w-100 h-100" alt="">
                             </div>
                             <div class="col-md-7 my-auto pl-0">
                                 <div class="table-header text-center">
