@@ -280,6 +280,13 @@ h2.section-title-heading {
     font-weight: 600;
 }
 
+#produk .produk-table .table-footer input.button-tambah:hover {
+    text-decoration: none;
+    background: #ffffff;
+    color: rgb(22, 212, 95);
+    border: 2px solid rgb(22, 212, 95);
+}
+
 #produk .table-header {
     margin: 0;
     width: 100%;
@@ -290,7 +297,7 @@ h2.section-title-heading {
 }
 
 #produk .button_plus, #produk .button_minus {
-    background: linear-gradient(to right, rgb(22, 212, 95), rgb(105,240,174)) !important;
+    border-radius: 100% !important;
 }
 
 /* ============ TESTIMONI =============== */

@@ -163,9 +163,9 @@
                                     <p class="mb-0">10 pcs</p>
                                     <p>Rp 35.000</p>
                                     <div class="px-1 py-2 mx-auto">
-                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})">+</button>
+                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">-</button>
                                         <p id="show_{{$value->id}}" class="mr-1 ml-1 d-inline" style="color: #000 !important;">1</p>
-                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})">-</button>
+                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">+</button>
                                     </div>
                                 </div>
                                 <div class="table-footer text-center">
@@ -188,9 +188,9 @@
                                     <p class="mb-0">10 pcs</p>
                                     <p>Rp 35.000</p>
                                     <div class="px-1 py-2 mx-auto">
-                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})">+</button>
+                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">-</button>
                                         <p id="show_{{$value->id}}" class="mr-1 ml-1 d-inline" style="color: #000 !important;">1</p>
-                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})">-</button>
+                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">+</button>
                                     </div>
                                 </div>
                                 <div class="table-footer text-center">
@@ -214,9 +214,9 @@
                                     <p class="mb-0">10 pcs</p>
                                     <p>Rp 35.000</p>
                                     <div class="px-1 py-2 mx-auto">
-                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})">+</button>
+                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">-</button>
                                         <p id="show_{{$value->id}}" class="mr-1 ml-1 d-inline" style="color: #000 !important;">1</p>
-                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})">-</button>
+                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">+</button>
                                     </div>
                                 </div>
                                 <div class="table-footer text-center">
@@ -239,9 +239,9 @@
                                     <p class="mb-0">10 pcs</p>
                                     <p>Rp 35.000</p>
                                     <div class="px-1 py-2 mx-auto">
-                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})">+</button>
+                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">-</button>
                                         <p id="show_{{$value->id}}" class="mr-1 ml-1 d-inline" style="color: #000 !important;">1</p>
-                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})">-</button>
+                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">+</button>
                                     </div>
                                 </div>
                                 <div class="table-footer text-center">
