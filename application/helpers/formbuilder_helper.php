@@ -19,6 +19,18 @@ function formbuilder($field, $value=array())
                 $data .='<input type="password" name="'.$v['name'].'" class="form-control" placeholder="'.$v['label'].'" value="'.(empty($value) ? '' : $value[$v['name']]).'">';
                $data .='</div>';
                 break;
+            case 'NUMBER':
+                $data .='<div class="form-group '.$v['col'].'">';
+                $data .='<label>'.$v['label'].'</label>';
+                $data .='<input type="number" name="'.$v['name'].'" class="form-control" placeholder="'.$v['label'].'" value="'.(empty($value) ? '' : $value[$v['name']]).'">';
+               $data .='</div>';
+                break;
+            case 'FILE':
+                $data .='<div class="form-group '.$v['col'].'">';
+                $data .='<label>'.$v['label'].'</label>';
+                $data .='<input type="file" name="'.$v['name'].'" class="form-control" placeholder="'.$v['label'].'" value="'.(empty($value) ? '' : $value[$v['name']]).'">';
+               $data .='</div>';
+                break;
             case 'TEXTAREA':
                 $data .='<div class="form-group '.$v['col'].'">';
                 $data .='<label>'.$v['label'].'</label>';

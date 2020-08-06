@@ -150,108 +150,34 @@
             </div>
 
             <div class="row">
-
+                <?php foreach($product as $key => $value): ?>
                 <div class="col-md-6" style="margin-bottom: 60px;">
                     <div class="produk-table w-100">
                         <div class="row">
                             <div class="col-5">
-                                <img src="assets/img/produk-1.jpg" class="img-fluid w-100 h-100" alt="">
+                                <img src="<?=base_url().$value['image']?>" class="img-fluid w-100 h-100" alt="">
                             </div>
                             <div class="col-7 my-auto pl-0">
                                 <div class="table-header text-center">
-                                    <h4 class="mb-0">Baso Urat</h4>
-                                    <p class="mb-0">10 pcs</p>
-                                    <p>Rp 35.000</p>
+                                    <h4 class="mb-0"><?=$value['name']?></h4>
+                                    <p class="mb-0"><?=$value['description']?></p>
+                                    <p>Rp <?=number_format($value['harga'], 0, '', '.')?></p>
                                     <div class="px-1 py-2 mx-auto">
-                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">-</button>
-                                        <p id="show_{{$value->id}}" class="mr-1 ml-1 d-inline" style="color: #000 !important;">1</p>
-                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">+</button>
+                                        <button class="btn btn-warning button_minus" onclick="button_minus(<?=$value['id']?>,'minus')" style="border-radius: 100% !important; padding: 5px 13px;">-</button>
+                                        <p id="show_<?=$value['id']?>" class="mr-1 ml-1 d-inline" style="color: #000 !important;">1</p>
+                                        <button class="btn btn-warning button_plus" onclick="button_minus(<?=$value['id']?>,'plus')" style="border-radius: 100% !important; padding: 5px 13px;">+</button>
                                     </div>
                                 </div>
                                 <div class="table-footer text-center">
-                                    <input type="submit" class="btn btn-success button-tambah" value="Tambah">
+                                    <input type="hidden" id="value_mount_<?=$value['id']?>" value="1">
+                                    <input type="button" onclick="addtochart(<?=$value['id']?>)" class="btn btn-success button-tambah" value="Tambah">
                                 </div>
                             </div>
                         </div>
     
                     </div>
                 </div>
-                <div class="col-md-6" style="margin-bottom: 60px;">
-                    <div class="produk-table w-100">
-                        <div class="row">
-                            <div class="col-5">
-                                <img src="assets/img/produk-1.jpg" class="img-fluid w-100 h-100" alt="">
-                            </div>
-                            <div class="col-7 my-auto pl-0">
-                                <div class="table-header text-center">
-                                    <h4 class="mb-0">Baso Bulat</h4>
-                                    <p class="mb-0">10 pcs</p>
-                                    <p>Rp 35.000</p>
-                                    <div class="px-1 py-2 mx-auto">
-                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">-</button>
-                                        <p id="show_{{$value->id}}" class="mr-1 ml-1 d-inline" style="color: #000 !important;">1</p>
-                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">+</button>
-                                    </div>
-                                </div>
-                                <div class="table-footer text-center">
-                                    <input type="submit" class="btn btn-success button-tambah" value="Tambah">
-                                </div>
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
-                
-                <div class="col-md-6" style="margin-bottom: 60px;">
-                    <div class="produk-table w-100">
-                        <div class="row">
-                            <div class="col-5">
-                                <img src="assets/img/produk-1.jpg" class="img-fluid w-100 h-100" alt="">
-                            </div>
-                            <div class="col-7 my-auto pl-0">
-                                <div class="table-header text-center">
-                                    <h4 class="mb-0">Baso Urat</h4>
-                                    <p class="mb-0">10 pcs</p>
-                                    <p>Rp 35.000</p>
-                                    <div class="px-1 py-2 mx-auto">
-                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">-</button>
-                                        <p id="show_{{$value->id}}" class="mr-1 ml-1 d-inline" style="color: #000 !important;">1</p>
-                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">+</button>
-                                    </div>
-                                </div>
-                                <div class="table-footer text-center">
-                                    <input type="submit" class="btn btn-success button-tambah" value="Tambah">
-                                </div>
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="produk-table w-100">
-                        <div class="row">
-                            <div class="col-5">
-                                <img src="assets/img/produk-1.jpg" class="img-fluid w-100 h-100" alt="">
-                            </div>
-                            <div class="col-7 my-auto pl-0">
-                                <div class="table-header text-center">
-                                    <h4 class="mb-0">Baso Bulat</h4>
-                                    <p class="mb-0">10 pcs</p>
-                                    <p>Rp 35.000</p>
-                                    <div class="px-1 py-2 mx-auto">
-                                        <button class="btn btn-warning button_minus" onclick="button_minus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">-</button>
-                                        <p id="show_{{$value->id}}" class="mr-1 ml-1 d-inline" style="color: #000 !important;">1</p>
-                                        <button class="btn btn-warning button_plus" onclick="button_plus({{$value->id}})" style="border-radius: 100% !important; padding: 5px 13px;">+</button>
-                                    </div>
-                                </div>
-                                <div class="table-footer text-center">
-                                    <input type="submit" class="btn btn-success button-tambah" value="Tambah">
-                                </div>
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
 
@@ -387,17 +313,17 @@
         </div>
 
     </footer>
-
-    <a href="#" id="beliFloating" class="btn btn-success">
-        <span class="float-left">1 item | Rp 200.000</span>
-        <span class="float-right"><i class="fa fa-shopping-cart"></i></span>
+    <div id="button_wa">
+    <?=$link?>
     </a>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>   
     <script src="<?=base_url()?>assets/js/custom.js" ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         //Get the button
         var mybutton = document.getElementById("beliFloating");
@@ -412,6 +338,39 @@
             mybutton.style.display = "none";
           }
         }
+    </script>
+    <script type="text/javascript">
+       function button_minus(id,oprator)
+       {
+            var mount = $('#value_mount_'+id).val();
+            if (oprator=='plus') {
+                var jumlah = parseInt(mount) + 1;
+            }else{
+
+                var jumlah = parseInt(mount) - 1;
+            }
+            if (jumlah<1) {
+                swal("Jumlah Tidak Boleh Nol");
+            }else{
+            $('#value_mount_'+id).val(jumlah);
+            $('#show_'+id).html(jumlah);
+
+            }
+       }
+       function addtochart(id)
+       {
+
+            var mount = $('#value_mount_'+id).val();
+            $.ajax({
+                url : '<?=site_url()?>Welcome/add?id_product='+id+'&mount='+mount,
+                success : function(data){
+                    console.log(data)
+                    alert(data)
+                    $('#button_wa').html(data)
+                    swal("Berhasil");
+                }
+            })
+       }
     </script>
 </body>
 </html>

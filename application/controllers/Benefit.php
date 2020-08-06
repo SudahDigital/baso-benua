@@ -6,6 +6,9 @@ class benefit extends CI_Controller {
 	function __construct()
     {
         parent::__construct();
+         if (!$this->session->userdata('login_id')) {
+         	redirect('Login');
+         }
         $option  = array(
         	array('faficon' =>'fa fa-users' ,'name'=>'<i class="fa fa-users"></i>' ),
         	array('faficon' =>'fa fa-book' ,'name'=>'<i class="fa fa-book"></i>' ), 
@@ -22,6 +25,7 @@ class benefit extends CI_Controller {
         	array('faficon' =>'fa fa-coffee' ,'name'=>'<i class="fa fa-coffee"></i>' ), 
         	array('faficon' =>'fa fa-comment' ,'name'=>'<i class="fa fa-comment"></i>' ), 
         	array('faficon' =>'fa fa-credit-card' ,'name'=>'<i class="fa fa-credit-card"></i>' ), 
+        	array('faficon' =>'fa fa-lightbulb-o' ,'name'=>'<i class="fa fa-lightbulb-o"></i>' ), 
         );
         $this->field = array(
    			array('label' => 'ID','class'=>'form-control', 'col'=>'col-md-12','type'=>'HIDDEN','name'=>'id', 'table_show'=>'HIDDEN'),

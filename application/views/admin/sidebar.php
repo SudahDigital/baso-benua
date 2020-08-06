@@ -25,6 +25,14 @@
                with font-awesome or any other icon font library -->
           
           <li class="nav-item">
+            <a href="<?=site_url('product')?>" class="nav-link">
+              <i class="nav-icon fa fa-lightbulb-o"></i>
+              <p>
+                Product
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="<?=site_url('user')?>" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
@@ -37,6 +45,14 @@
               <i class="nav-icon fas fa-info-circle"></i>
               <p>
                 Benefit
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="<?=site_url('fitur')?>" class="nav-link">
+              <i class="nav-icon fa fa-lightbulb-o"></i>
+              <p>
+                Fitur
               </p>
             </a>
           </li>
