@@ -9,6 +9,7 @@ class Welcome extends CI_Controller {
          add_cookies();
         $this->load->model('M_product','product');
         $this->load->model('M_cart','cart');
+        $this->load->model('M_fitur','fitur');
 
          
     }
@@ -23,17 +24,18 @@ class Welcome extends CI_Controller {
 		$jumlah = count($cart);
 		if ($jumlah<1) {
 			# code...
-			$data['link'] =  '<a style="display:block" href="#" id="beliFloating" class="btn btn-success"><span class="float-left">0 item | Rp 0</span><span class="float-right"><i class="fa fa-shopping-cart"></i></span></a>';
+			$data['link'] =  '<a target="_BLANK" style="display:block" href="#" id="beliFloating" class="btn btn-success"><span class="float-left">0 item | Rp 0</span><span class="float-right"><i class="fa fa-shopping-cart"></i></span></a>';
 		}else{
 			foreach ($cart as $key => $value) {
-				$href .= '*'.$value['name'].'* Dengan Jumlah *'.$value['jumlah'].'*, ';
+				$href .= '*'.$value['name'].'* QTY *'.$value['jumlah'].'*, ';
 				$total += $value['total'];
 			}
 			// echo $href;die;
-			$data['link'] =  '<a style="display:block" href="https://wa.me/6282125555031?text='.$href.'" id="beliFloating" class="btn btn-success"><span class="float-left">'.$jumlah.' item | Rp '.number_format($total).'</span><span class="float-right"><i class="fa fa-shopping-cart"></i></span></a>';
+			$data['link'] =  '<a target="_BLANK" style="display:block" href="https://wa.me/6282125555031?text='.$href.'" id="beliFloating" class="btn btn-success"><span class="float-left">'.$jumlah.' item | Rp '.number_format($total).'</span><span class="float-right"><i class="fa fa-shopping-cart"></i></span></a>';
 
 		}
 		$data['product'] = $this->product->get();
+		$data['fitur'] = $this->fitur->get();
 		$this->load->view('index',$data);
 	}
 	public function add()
@@ -62,11 +64,11 @@ class Welcome extends CI_Controller {
 		$total = 0;
 		$jumlah = count($cart);
 		foreach ($cart as $key => $value) {
-			$href .= '*'.$value['name'].'* *'.$value['jumlah'].'*, ';
+			$href .= '*'.$value['name'].'* QTY *'.$value['jumlah'].'*, ';
 			$total += $value['total'];
 		}
 		// echo $href;die;
-		$link =  '<a style="display:block" href="https://wa.me/6282125555031?text='.$href.'" id="beliFloating" class="btn btn-success"><span class="float-left">'.$jumlah.' item | Rp '.number_format($total).'</span><span class="float-right"><i class="fa fa-shopping-cart"></i></span></a>';
+		$link =  '<a  target="_BLANK" style="display:block" href="https://wa.me/6282125555031?text='.$href.'" id="beliFloating" class="btn btn-success"><span class="float-left">'.$jumlah.' item | Rp '.number_format($total).'</span><span class="float-right"><i class="fa fa-shopping-cart"></i></span></a>';
 		echo $link;
 	}
 }

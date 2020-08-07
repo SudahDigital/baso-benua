@@ -88,10 +88,9 @@
             <div class="row mt-5">
 
                 <div class="col-md-6 order-2 order-md-1 my-auto" id="textFitur">
-                    <h4><i class="fas fa-check mb-2 mr-2"></i> Kualitas Daging AAA Fresh Cut</h4>
-                    <h4><i class="fas fa-check mb-2 mr-2"></i> Baso dibuat tiap hari bukan home made</h4>
-                    <h4><i class="fas fa-check mb-2 mr-2"></i> 95% Daging 5% Bumbu , 0% Pengawet</h4>
-                    <h4><i class="fas fa-check mb-2 mr-2"></i> Proses Higienis dan terkontrol</h4>
+                    <?php foreach ($fitur as $key_fitur => $fitur): ?>
+                    <h4><i class="fas fa-check mb-2 mr-2"></i> <?=$fitur['fitur']?></h4>
+                    <?php endforeach ?>
                 </div>
                 <div class="col-md-6 order-1 order-md-2 text-center">
                     <img src="assets/img/feature.png" id="imageFiturDesktop" class="d-none d-md-inline-block img-fluid w-100" alt="">
