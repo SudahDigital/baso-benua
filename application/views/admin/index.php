@@ -66,11 +66,7 @@
     </div>
   </footer>
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
+
 </div>
 <!-- ./wrapper -->
 
@@ -116,14 +112,7 @@
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
-<figure class="highcharts-figure">
-  
-  <p class="highcharts-description">
-    Demonstrating a basic area chart, also known as a mountain chart.
-    Area charts are similar to line charts, but commonly used to visualize
-    volumes.
-  </p>
-</figure>
+
 <!-- penjualan -->
 <script type="text/javascript">
   Highcharts.chart('penjualan', {
