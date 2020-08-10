@@ -33,14 +33,6 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?=site_url('user')?>" class="nav-link">
-              <i class="nav-icon fas fa-users"></i>
-              <p>
-                User
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
             <a href="<?=site_url('benefit')?>" class="nav-link">
               <i class="nav-icon fas fa-info-circle"></i>
               <p>
@@ -56,6 +48,24 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="<?=site_url('Informasi')?>" class="nav-link">
+              <i class="nav-icon fa fa-lightbulb-o"></i>
+              <p>
+                Informasi
+              </p>
+            </a>
+          </li>
+          <?php if ($this->session->userdata('level')=='superadmin'):?>
+          <li class="nav-item">
+            <a href="<?=site_url('user')?>" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                User
+              </p>
+            </a>
+          </li>
+          <?php endforeach ?>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
