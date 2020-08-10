@@ -25,6 +25,14 @@
                with font-awesome or any other icon font library -->
           
           <li class="nav-item">
+            <a href="<?=site_url('Admin')?>" class="nav-link">
+              <i class="nav-icon fa fa-dashboard"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="<?=site_url('product')?>" class="nav-link">
               <i class="nav-icon fa fa-lightbulb-o"></i>
               <p>
@@ -65,7 +73,7 @@
               </p>
             </a>
           </li>
-          <?php endforeach ?>
+          <?php endif ?>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

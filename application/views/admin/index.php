@@ -28,6 +28,7 @@
 
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -48,11 +49,6 @@
         <a href="<?=site_url('login/logout')?>"title="Logout" ><i class="fa  fa-sign-out fa-x3"></i>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-          <i class="fas fa-th-large"></i>
-        </a>
-      </li>
     </ul>
   </nav>
   <!-- /.navbar -->
@@ -63,7 +59,7 @@
   <?php $this->load->view($page)?>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+    <strong>Copyright &copy; 2020   Deplove BY: <a href="http://wiraimajinyata.com">PT Wiraimajinyata</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 3.0.5
@@ -114,5 +110,83 @@
 <script src="<?=base_url()?>asset_admin/dist/js/demo.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <?=$this->session->flashdata('msg')?>
+<?php if ($this->uri->segment(1)=='admin'): ?>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<figure class="highcharts-figure">
+  
+  <p class="highcharts-description">
+    Demonstrating a basic area chart, also known as a mountain chart.
+    Area charts are similar to line charts, but commonly used to visualize
+    volumes.
+  </p>
+</figure>
+<!-- penjualan -->
+<script type="text/javascript">
+  Highcharts.chart('penjualan', {
+  chart: {
+    type: 'area'
+  },
+  accessibility: {
+    description: 'Cart penjualan perhari'
+  },
+  title: {
+    text: 'Penjualan Per Hari'
+  },
+  
+  xAxis: {
+
+        type: 'date',
+        accessibility: {
+          rangeDescription: 'Range: Jan 1st 2017 to Dec 31 2017.'
+        }
+      },
+  tooltip: {
+    pointFormat: '{series.name} Penjualan <b>{point.y:,.0f}</b><br/>warheads in {point.x}'
+  },
+  
+  series: [{
+    name: 'penjualan',
+    data: [
+      0,
+    ]
+  },]
+});
+</script>
+<script type="text/javascript">
+  Highcharts.chart('pengunjung', {
+  chart: {
+    type: 'area'
+  },
+  accessibility: {
+    description: 'Cart pengunjung perhari'
+  },
+  title: {
+    text: 'Pengunjung Per Hari'
+  },
+  
+  xAxis: {
+
+        type: 'date',
+        accessibility: {
+          rangeDescription: 'Range: Jan 1st 2017 to Dec 31 2017.'
+        }
+      },
+  tooltip: {
+    pointFormat: '{series.name} Pengunjung <b>{point.y:,.0f}</b><br/>warheads in {point.x}'
+  },
+  
+  series: [{
+    name: 'pengunjung',
+    data: [
+      0,
+    ]
+  },]
+});
+</script>
+<?php endif?>
 </body>
 </html>
