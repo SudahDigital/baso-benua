@@ -25,7 +25,8 @@ class benefit extends CI_Controller {
         	array('faficon' =>'fa fa-coffee' ,'name'=>'<i class="fa fa-coffee"></i>' ), 
         	array('faficon' =>'fa fa-comment' ,'name'=>'<i class="fa fa-comment"></i>' ), 
         	array('faficon' =>'fa fa-credit-card' ,'name'=>'<i class="fa fa-credit-card"></i>' ), 
-        	array('faficon' =>'fa fa-lightbulb-o' ,'name'=>'<i class="fa fa-lightbulb-o"></i>' ), 
+        	array('faficon' =>'fa fa-lightbulb' ,'name'=>'<i class="fa fa-lightbulb-o"></i>' ),
+        	array('faficon' =>'fa fa-user-shield' ,'name'=>'<i class="fa fa-user-shield"></i>' ),
         );
         $this->field = array(
    			array('label' => 'ID','class'=>'form-control', 'col'=>'col-md-12','type'=>'HIDDEN','name'=>'id', 'table_show'=>'HIDDEN'),

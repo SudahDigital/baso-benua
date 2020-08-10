@@ -89,7 +89,7 @@
 
                 <div class="col-md-6 order-2 order-md-1 my-auto" id="textFitur">
                     <?php foreach ($fitur as $key_fitur => $fitur): ?>
-                    <h4><i class="fas fa-check mb-2 mr-2"></i> <?=$fitur['fitur']?></h4>
+                    <h5><i class="fas fa-check mb-2 mr-2"></i> <?=$fitur['fitur']?></h5>
                     <?php endforeach ?>
                 </div>
                 <div class="col-md-6 order-1 order-md-2 text-center">
@@ -112,25 +112,15 @@
             </div>
 
             <div class="row mt-5 mb-5" id="benefitContent">
-
+                <?php foreach ($benefit as $key_benefit => $benefit) : ?>
                 <div class="col-md-6 mb-3">
                     <div class="benefit-block">
-                        <i class="fas fa-lightbulb fa-3x mb-3"></i>
-                        <h3 class="text-center">Solusi makanan bergizi utk keluarga</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae illum asperiores deleniti. Facere, possimus 
-                            architecto necessitatibus alias veritatis aperiam eius quibusdam vel ducimus fuga 
-                            delectus, velit, temporibus consequatur voluptatibus a.</p>
+                        <i class="<?=$benefit['icon']?> fa-3x mb-3"></i>
+                        <h3 class="text-center"><?=$benefit['name']?></h3>
+                        <p><?=$benefit['descriptios']?></p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="benefit-block">
-                        <i class="fas fa-user-shield fa-3x mb-3"></i>
-                        <h3 class="text-center">Aman untuk Keluarga</h3>
-                        <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae illum asperiores deleniti. Facere, possimus 
-                            architecto necessitatibus alias veritatis aperiam eius quibusdam vel ducimus fuga 
-                            delectus, velit, temporibus consequatur voluptatibus a.</p>
-                    </div>
-                </div>
+                <?php endforeach ;?>
 
             </div>
 
@@ -272,12 +262,12 @@
             </div>
 
             <div class="row mt-5">
-
                 <div class="col-md-8 offset-md-2">
-                    <h4><i class="fas fa-arrow-right mb-2 mr-2"></i> Bakso Urat hanya bisa simpan 3 minggu di freezer</h4>
-                    <h4><i class="fas fa-arrow-right mb-2 mr-2"></i> Bakso Gepeng 1 minggu di chiller</h4>
-                    <h4><i class="fas fa-arrow-right mb-2 mr-2"></i> Bumbu ,minyak bawang, sambel ,bawang kering</h4>
+                <?php foreach ($informasi as $key_informasi => $informasi): ?>
+                    <h5><i class="fas fa-arrow-right mb-2 mr-2"></i> <?=$informasi['isi']?></h5>
+                <?php endforeach; ?>
                 </div>
+
 
             </div>
 

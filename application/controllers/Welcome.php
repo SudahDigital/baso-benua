@@ -10,6 +10,8 @@ class Welcome extends CI_Controller {
         $this->load->model('M_product','product');
         $this->load->model('M_cart','cart');
         $this->load->model('M_fitur','fitur');
+        $this->load->model('M_benefit','benefit');
+        $this->load->model('M_informasi','informasi');
 
          
     }
@@ -36,6 +38,8 @@ class Welcome extends CI_Controller {
 		}
 		$data['product'] = $this->product->get();
 		$data['fitur'] = $this->fitur->get();
+		$data['benefit'] = $this->benefit->get();
+		$data['informasi'] = $this->informasi->get();
 		$this->load->view('index',$data);
 	}
 	public function add()
