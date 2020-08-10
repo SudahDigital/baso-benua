@@ -15,8 +15,8 @@ function formbuilder($field, $value=array())
                 break;
             case 'PASSWORD':
                 $data .='<div class="form-group '.$v['col'].'">';
-                $data .='<label>'.$v['label'].'</label>';
-                $data .='<input type="password" name="'.$v['name'].'" class="form-control" placeholder="'.$v['label'].'" value="'.(empty($value) ? '' : $value[$v['name']]).'">';
+                $data .='<label>'.$v['label'].'<small><b>Kosongkan jika tidak ingin merubah password</b></small>''</label>';
+                $data .='<input type="password" name="'.$v['name'].'" class="form-control" placeholder="'.$v['label'].'" value="">';
                $data .='</div>';
                 break;
             case 'NUMBER':
